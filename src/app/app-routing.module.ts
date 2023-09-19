@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: 'categories' , loadChildren:'./pages/categories/categories.module#CategoriesModule'}
+  
 ];
 
 @NgModule({
