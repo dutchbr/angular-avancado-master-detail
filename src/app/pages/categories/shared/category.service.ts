@@ -4,7 +4,6 @@ import {Observable,throwError  } from 'rxjs';
 import {map,catchError,flatMap} from "rxjs/operators"
 
 import {Category} from "./category.model";
-import { element } from 'protractor';
 
 
 @Injectable({
@@ -57,15 +56,13 @@ private jsonDataToCategory(jsonData:any):Category
 {
   return jsonData as Category;
 }
-
-
-   private jsonDataToCategories(jsonData:any[]):Category[]
+ private jsonDataToCategories(jsonData:any[]):Category[]
    {
      const categories:Category[]=[];
      jsonData.forEach(element => categories.push(element as Category));
      return categories;
 
-   }
+  }
    private handleError(error: any): Observable<any>{
     console.log("ERRO NA REQUISICAO =>", error);
     return throwError(error); 

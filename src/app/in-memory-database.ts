@@ -1,6 +1,6 @@
 import {InMemoryDbService} from "angular-in-memory-web-api"
 
-export class InMemoryService implements InMemoryDbService
+export class InMemoryDatabase implements InMemoryDbService
 {
 
     createDb()
