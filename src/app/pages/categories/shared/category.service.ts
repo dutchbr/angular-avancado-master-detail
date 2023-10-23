@@ -33,7 +33,7 @@ getById(id:number):Observable<Category>
 
 create(category:Category):Observable<Category>
 {
-  return this.http.post(this.apiPath, Category).pipe(
+  return this.http.post(this.apiPath, category).pipe(
     catchError(this.handleError),map(this.jsonDataToCategory)
   )
 }
