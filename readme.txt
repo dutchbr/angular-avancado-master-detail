@@ -12,5 +12,5 @@ npm i toastr@2.1.4 --legacy-peer-deps
 
 toastr": "^2.1.4",
 
-#aula Corrente : 23
+#aula Corrente : 25
 
